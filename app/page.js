@@ -180,38 +180,4 @@ export default function Home() {
             <div className="theme-icon">🔌</div>
             <h3 className="theme-title">Model Context Protocol</h3>
             <p className="theme-description">
-              Leverage MCP to build AI agents that seamlessly integrate with tools, databases, and APIs. Connect AI to the real world.
-            </p>
-          </div>
-          <div className="theme-card">
-            <div className="theme-icon">🚀</div>
-            <h3 className="theme-title">Venture-Scale Products</h3>
-            <p className="theme-description">
-              Think big. Build products that can scale to millions. Get feedback from experienced VCs and successful founders.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Schedule Section */}
-      <section className="schedule-section" id="schedule">
-        <div className="schedule-container">
-          <h2 className="section-title">Event Schedule</h2>
-
-          <div className="day-schedule">
-            <div className="day-header">Day 1 - Kickoff & Building</div>
-            <div className="schedule-items">
-              <div className="schedule-item"><span className="schedule-time">9:00 AM</span><span className="schedule-event">Networking + Breakfast</span></div>
-              <div className="schedule-item"><span className="schedule-time">10:30 AM</span><span className="schedule-event">Opening Speeches</span></div>
-              <div className="schedule-item"><span className="schedule-time">12:00 PM</span><span className="schedule-event">Lunch</span></div>
-              <div className="schedule-item"><span className="schedule-time">1:00 PM</span><span className="schedule-event">Workshops / Speakers</span></div>
-              <div className="schedule-item"><span className="schedule-time">6:00 PM</span><span className="schedule-event">Dinner</span></div>
-              <div className="schedule-item"><span className="schedule-time">7:00 PM</span><span className="schedule-event">Continue Hacking</span></div>
-            </div>
-          </div>
-
-          <div className="day-schedule">
-            <div className="day-header">Day 2 - Sprint & Demo</div>
-            <div className="schedule-items">
-              <div className="schedule-item"><span className="schedule-time">9:00 AM</span><span className="schedule-event">Breakfast</span></div>
-              <div className="schedule-item"><span className="schedule-time">11:45 AM</span><sp
+              Leverage MCP to build AI agents that seamlessly integrate with tools, databases,
