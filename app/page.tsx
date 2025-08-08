@@ -262,21 +262,14 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Meet the Judges</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { initials: 'JD', name: 'Jane Doe', title: 'Partner at Afore Capital' },
-              { initials: 'JS', name: 'John Smith', title: 'CTO at AI Startup' },
-              { initials: 'AJ', name: 'Alex Johnson', title: 'Founder at Rho' },
-              { initials: 'SC', name: 'Sarah Chen', title: 'AI Research Lead' },
-              { initials: 'MR', name: 'Michael Ross', title: 'Engineering Director' },
-              { initials: 'EP', name: 'Emily Park', title: 'Product Lead at Tech Co' },
-            ].map((judge, index) => (
-              <Link key={index} href="mailto:vsuortiz@andrew.cmu.edu" className="bg-white rounded-2xl p-8 text-center hover:shadow-xl transition-all card-hover cursor-pointer">
-                <div className="w-24 h-24 bg-gradient-to-br from-blue-100 to-blue-50 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-3xl font-bold text-blue-900">{judge.initials}</span>
+            {[1, 2, 3, 4, 5, 6].map((index) => (
+              <div key={index} className="bg-white rounded-2xl p-8 text-center border-2 border-dashed border-gray-300">
+                <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl text-gray-400">?</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{judge.name}</h3>
-                <p className="text-gray-600">{judge.title}</p>
-              </Link>
+                <h3 className="text-xl font-bold mb-2 text-gray-400">Judge TBA</h3>
+                <p className="text-gray-400">Coming Soon</p>
+              </div>
             ))}
           </div>
         </div>
@@ -351,7 +344,7 @@ export default function Home() {
                 <span className="font-bold text-xl">Afore Agents Hackathon</span>
               </div>
               <p className="text-gray-400">Building the future with AI agents and MCP</p>
-              <p className="text-gray-400 text-sm mt-2">Hosted by Afore Capital & Rho</p>
+              <p className="text-gray-400 text-sm mt-2">Hosted by Afore Capital</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Event Details</h4>
@@ -367,9 +360,9 @@ export default function Home() {
                 <Link href="https://afore.vc" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Afore Capital →
                 </Link>
-                <Link href="https://rho.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                {/* <Link href="https://rho.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Rho →
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
