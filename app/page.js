@@ -150,7 +150,7 @@ export default function Home() {
               <div className="stat-label">Hours of Innovation</div>
             </div>
             <div className="stat">
-              <div className="stat-number">$50K</div>
+              <div className="stat-number">$5K</div>
               <div className="stat-label">In Prizes</div>
             </div>
             <div className="stat">
