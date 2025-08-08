@@ -36,7 +36,6 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    // Smooth scrolling
     const handleSmoothScroll = (e) => {
       if (e.target.tagName === 'A' && e.target.getAttribute('href')?.startsWith('#')) {
         e.preventDefault();
@@ -47,7 +46,6 @@ export default function Home() {
 
     document.addEventListener('click', handleSmoothScroll);
 
-    // Parallax effect
     const handleMouseMove = (e) => {
       const orbs = document.querySelectorAll('.floating-orb');
       const x = e.clientX / window.innerWidth;
@@ -63,7 +61,6 @@ export default function Home() {
 
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Scroll animations
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -204,107 +201,17 @@ export default function Home() {
           <div className="day-schedule">
             <div className="day-header">Day 1 - Kickoff & Building</div>
             <div className="schedule-items">
-              <div className="schedule-item">
-                <span className="schedule-time">9:00 AM</span>
-                <span className="schedule-event">Networking + Breakfast</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">10:30 AM</span>
-                <span className="schedule-event">Opening Speeches</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">12:00 PM</span>
-                <span className="schedule-event">Lunch</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">1:00 PM</span>
-                <span className="schedule-event">Workshops / Speakers</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">6:00 PM</span>
-                <span className="schedule-event">Dinner</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">7:00 PM</span>
-                <span className="schedule-event">Continue Hacking</span>
-              </div>
+              <div className="schedule-item"><span className="schedule-time">9:00 AM</span><span className="schedule-event">Networking + Breakfast</span></div>
+              <div className="schedule-item"><span className="schedule-time">10:30 AM</span><span className="schedule-event">Opening Speeches</span></div>
+              <div className="schedule-item"><span className="schedule-time">12:00 PM</span><span className="schedule-event">Lunch</span></div>
+              <div className="schedule-item"><span className="schedule-time">1:00 PM</span><span className="schedule-event">Workshops / Speakers</span></div>
+              <div className="schedule-item"><span className="schedule-time">6:00 PM</span><span className="schedule-event">Dinner</span></div>
+              <div className="schedule-item"><span className="schedule-time">7:00 PM</span><span className="schedule-event">Continue Hacking</span></div>
             </div>
           </div>
 
           <div className="day-schedule">
             <div className="day-header">Day 2 - Sprint & Demo</div>
             <div className="schedule-items">
-              <div className="schedule-item">
-                <span className="schedule-time">9:00 AM</span>
-                <span className="schedule-event">Breakfast</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">11:45 AM</span>
-                <span className="schedule-event">Note from Organizers</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">12:00 PM</span>
-                <span className="schedule-event">Lunch</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">3:14 PM</span>
-                <span className="schedule-event">Git Push Deadline</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">5:30 PM</span>
-                <span className="schedule-event">Final Demos</span>
-              </div>
-              <div className="schedule-item">
-                <span className="schedule-time">6:30 PM</span>
-                <span className="schedule-event">Awards & Closing Ceremony</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Partners Section */}
-      <section className="partners-section" id="partners">
-        <h2 className="section-title">Co-hosted By</h2>
-        <div className="partners-grid">
-          <div className="partner-card">
-            <div className="partner-name">AFORE</div>
-            <div className="partner-description">Pre-Seed Venture Capital</div>
-          </div>
-          <div className="partner-card">
-            <div className="partner-name">RHO</div>
-            <div className="partner-description">Better Banking for Startups</div>
-          </div>
-        </div>
-      </section>
-
-      {/* Judges & Sponsors Section */}
-      <section className="judges-sponsors-section" id="judges-sponsors">
-        <h2 className="section-title">Judges & Sponsors</h2>
-        <p className="section-subtitle">
-          We're finalizing an exciting panel of judges and amazing sponsors. If you're interested in sponsoring or judging, reach out!
-        </p>
-        <div className="email-cta">
-          <a href="mailto:vsuortiz@andrew.cmu.edu" className="btn-email">
-            Contact the Organizer
-          </a>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer>
-        <div className="footer-content">
-          <div className="footer-links">
-            <a href="https://afore.vc" target="_blank" rel="noopener noreferrer">Afore Capital</a>
-            <a href="https://rho.co" target="_blank" rel="noopener noreferrer">Rho</a>
-            <a href="#">Code of Conduct</a>
-            <a href="#">Contact</a>
-          </div>
-          <p className="copyright">
-            © 2025 Afore Agents Hackathon. Building the future, one agent at a time.
-          </p>
-        </div>
-      </footer>
-    </>
-  );
-}
+              <div className="schedule-item"><span className="schedule-time">9:00 AM</span><span className="schedule-event">Breakfast</span></div>
+              <div className="schedule-item"><span className="schedule-time">11:45 AM</span><sp
