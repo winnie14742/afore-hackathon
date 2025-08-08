@@ -167,7 +167,7 @@ export default function Home() {
 
       {/* Theme Section */}
       <section className="theme-section" id="theme">
-        <h2 className="section-title">What You'll Build</h2>
+        <h2 className="section-title">What You&apos;ll Build</h2>
         <div className="theme-grid">
           <div className="theme-card">
             <div className="theme-icon">🤖</div>
