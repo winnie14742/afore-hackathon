@@ -180,4 +180,5 @@ export default function Home() {
             <div className="theme-icon">🔌</div>
             <h3 className="theme-title">Model Context Protocol</h3>
             <p className="theme-description">
-              Leverage MCP to build AI agents that seamlessly integrate with tools, databases,
+              Leverage MCP to build AI agents that seamlessly integrate with tools, databases, and APIs. Connect AI to the real world.
+            </p>
