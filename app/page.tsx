@@ -33,8 +33,7 @@ export default function Home() {
               <Link href="#schedule" className="text-gray-600 hover:text-blue-900 transition-colors">Schedule</Link>
               <Link href="#sponsors" className="text-gray-600 hover:text-blue-900 transition-colors">Sponsors</Link>
               <Link href="#judges" className="text-gray-600 hover:text-blue-900 transition-colors">Judges</Link>
-              <Link href="#prizes" className="text-gray-600 hover:text-blue-900 transition-colors">Prizes</Link>
-              <Link href="https://apply.example.com" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-all hover:shadow-lg">
+              <Link href="https://lu.ma/tmyl2279" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-all hover:shadow-lg">
                 Apply Now
               </Link>
             </div>
@@ -52,8 +51,7 @@ export default function Home() {
             <Link href="#schedule" className="block py-2 text-gray-600">Schedule</Link>
             <Link href="#sponsors" className="block py-2 text-gray-600">Sponsors</Link>
             <Link href="#judges" className="block py-2 text-gray-600">Judges</Link>
-            <Link href="#prizes" className="block py-2 text-gray-600">Prizes</Link>
-            <Link href="https://apply.example.com" className="block bg-blue-900 text-white px-6 py-2 rounded-full text-center">Apply Now</Link>
+            <Link href="https://lu.ma/tmyl2279" className="block bg-blue-900 text-white px-6 py-2 rounded-full text-center">Apply Now</Link>
           </div>
         </div>
       </nav>
@@ -77,7 +75,7 @@ export default function Home() {
               A 2-day founder-focused sprint designed to uncover exceptional entrepreneurial talent by challenging participants to build venture-scale products powered by AI agents and Model Context Protocol (MCP).
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-              <Link href="https://apply.example.com" className="bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition-all hover:shadow-xl glow-effect">
+              <Link href="https://lu.ma/tmyl2279" className="bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition-all hover:shadow-xl glow-effect">
                 Apply Now →
               </Link>
               <div className="flex items-center gap-2 text-gray-600">
@@ -90,8 +88,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-900 mb-2">$5,000</div>
-                <div className="text-gray-600">Total Prize Pool</div>
+                <div className="text-3xl font-bold text-blue-900 mb-2">$5,000+</div>
+                <div className="text-gray-600">Prize Pool</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-900 mb-2">2</div>
@@ -275,57 +273,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Prizes Section */}
-      <section id="prizes" className="py-20 px-4 bg-white">
-        <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12">Prizes</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="relative">
-              <div className="bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-2xl p-8 border-2 border-yellow-300">
-                <div className="text-5xl mb-4">🥇</div>
-                <h3 className="text-2xl font-bold mb-2">1st Place</h3>
-                <div className="text-3xl font-bold text-yellow-600">$2,500</div>
-                <p className="text-gray-600 mt-2">Plus mentorship opportunities</p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl p-8 border-2 border-gray-300">
-                <div className="text-5xl mb-4">🥈</div>
-                <h3 className="text-2xl font-bold mb-2">2nd Place</h3>
-                <div className="text-3xl font-bold text-gray-600">$1,500</div>
-                <p className="text-gray-600 mt-2">Plus office hours with VCs</p>
-              </div>
-            </div>
-            <div className="relative">
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-8 border-2 border-orange-300">
-                <div className="text-5xl mb-4">🥉</div>
-                <h3 className="text-2xl font-bold mb-2">3rd Place</h3>
-                <div className="text-3xl font-bold text-orange-600">$1,000</div>
-                <p className="text-gray-600 mt-2">Plus startup resources</p>
-              </div>
-            </div>
-          </div>
-          <div className="mt-12 bg-gradient-to-r from-blue-900 to-blue-700 text-white rounded-2xl p-8 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Special Awards</h3>
-            <div className="grid md:grid-cols-2 gap-4 text-left">
-              <div className="flex items-center gap-3">
-                <div className="text-2xl">🚀</div>
-                <div>
-                  <div className="font-semibold">Best Use of MCP</div>
-                  <div className="text-blue-100">Additional prizes TBA</div>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="text-2xl">🎨</div>
-                <div>
-                  <div className="font-semibold">Most Creative Solution</div>
-                  <div className="text-blue-100">Additional prizes TBA</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
