@@ -110,13 +110,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content">
-          <div className="hackathon-badge">48-HOUR SPRINT</div>
+          <div className="hackathon-badge">22-HOUR SPRINT</div>
           <h1>
             Building the Future with
             <span className="highlight"> AI Agents & MCP</span>
           </h1>
           <p className="hero-subtitle">
-            Join exceptional founders for a 48-hour sprint to build venture-scale products powered by cutting-edge AI technology
+            Join exceptional founders for a 22-hour sprint to build venture-scale products powered by cutting-edge AI technology
           </p>
           <div className="hero-cta">
             <button className="btn-primary">Apply to Hack</button>
@@ -225,6 +225,10 @@ export default function Home() {
                 <span className="schedule-time">7:00 PM</span>
                 <span className="schedule-event">Continue Hacking</span>
               </div>
+              <div className="schedule-item">
+                <span className="schedule-time">9:30 PM</span>
+                <span className="schedule-event">Wrap Up</span>
+              </div>
             </div>
           </div>
 
@@ -252,7 +256,7 @@ export default function Home() {
                 <span className="schedule-event">Final Demos</span>
               </div>
               <div className="schedule-item">
-                <span className="schedule-time">6:30 PM</span>
+                <span className="schedule-time">6:00 PM</span>
                 <span className="schedule-event">Awards & Closing Ceremony</span>
               </div>
             </div>
