@@ -110,13 +110,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero" id="home">
         <div className="hero-content">
-          <div className="hackathon-badge">48-HOUR SPRINT</div>
+          <div className="hackathon-badge">22-HOUR SPRINT</div>
           <h1>
             Building the Future with
             <span className="highlight"> AI Agents & MCP</span>
           </h1>
           <p className="hero-subtitle">
-            Join exceptional founders for a 48-hour sprint to build venture-scale products powered by cutting-edge AI technology
+            Join exceptional founders for a 22-hour sprint to build venture-scale products powered by cutting-edge AI technology
           </p>
           <div className="hero-cta">
             <button className="btn-primary">Apply to Hack</button>
@@ -182,3 +182,116 @@ export default function Home() {
             <p className="theme-description">
               Leverage MCP to build AI agents that seamlessly integrate with tools, databases, and APIs. Connect AI to the real world.
             </p>
+
+          </div>
+          <div className="theme-card">
+            <div className="theme-icon">🚀</div>
+            <h3 className="theme-title">Venture-Scale Products</h3>
+            <p className="theme-description">
+              Think big. Build products that can scale to millions. Get feedback from experienced VCs and successful founders.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Schedule Section */}
+      <section className="schedule-section" id="schedule">
+        <div className="schedule-container">
+          <h2 className="section-title">Event Schedule</h2>
+          
+          <div className="day-schedule">
+            <div className="day-header">Day 1 - Kickoff & Building</div>
+            <div className="schedule-items">
+              <div className="schedule-item">
+                <span className="schedule-time">9:00 AM</span>
+                <span className="schedule-event">Networking + Breakfast</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">10:30 AM</span>
+                <span className="schedule-event">Opening Speeches</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">12:00 PM</span>
+                <span className="schedule-event">Lunch</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">1:00 PM</span>
+                <span className="schedule-event">Workshops / Speakers</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">6:00 PM</span>
+                <span className="schedule-event">Dinner</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">7:00 PM</span>
+                <span className="schedule-event">Continue Hacking</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">9:30 PM</span>
+                <span className="schedule-event">Wrap Up</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="day-schedule">
+            <div className="day-header">Day 2 - Sprint & Demo</div>
+            <div className="schedule-items">
+              <div className="schedule-item">
+                <span className="schedule-time">9:00 AM</span>
+                <span className="schedule-event">Breakfast</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">11:45 AM</span>
+                <span className="schedule-event">Note from Organizers</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">12:00 PM</span>
+                <span className="schedule-event">Lunch</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">3:14 PM</span>
+                <span className="schedule-event">Git Push Deadline</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">5:30 PM</span>
+                <span className="schedule-event">Final Demos</span>
+              </div>
+              <div className="schedule-item">
+                <span className="schedule-time">6:00 PM</span>
+                <span className="schedule-event">Awards & Closing Ceremony</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Partners Section */}
+      <section className="partners-section" id="partners">
+        <h2 className="section-title">Co-hosted By</h2>
+        <div className="partners-grid">
+          <div className="partner-card">
+            <div className="partner-name">AFORE</div>
+            <div className="partner-description">Pre-Seed Venture Capital</div>
+          </div>
+          <div className="partner-card">
+            <div className="partner-name">RHO</div>
+            <div className="partner-description">Better Banking for Startups</div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <div className="footer-content">
+          <div className="footer-links">
+            <a href="https://afore.vc" target="_blank" rel="noopener noreferrer">Afore Capital</a>
+            <a href="https://rho.co" target="_blank" rel="noopener noreferrer">Rho</a>
+            <a href="#">Code of Conduct</a>
+            <a href="#">Contact</a>
+          </div>
+          <p className="copyright">© 2025 Afore Agents Hackathon. Building the future, one agent at a time.</p>
+        </div>
+      </footer>
+    </>
+  );
+}
