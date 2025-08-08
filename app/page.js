@@ -8,7 +8,7 @@ export default function Home() {
     days: 0,
     hours: 0,
     minutes: 0,
-    seconds: 0
+    seconds: 0,
   });
 
   useEffect(() => {
@@ -22,8 +22,10 @@ export default function Home() {
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
           hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-          seconds: Math.floor((distance % (1000 * 60)) / 1000)
+          seconds: Math.floor((distance % (1000 * 60)) / 1000),
         });
+      } else {
+        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       }
     };
 
@@ -64,7 +66,7 @@ export default function Home() {
     // Scroll animations
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach(entry => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.style.animation = 'fadeInUp 0.8s ease both';
           }
@@ -73,7 +75,7 @@ export default function Home() {
       { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
     );
 
-    document.querySelectorAll('.theme-card, .schedule-item, .partner-card').forEach(el => {
+    document.querySelectorAll('.theme-card, .schedule-item, .partner-card').forEach((el) => {
       observer.observe(el);
     });
 
@@ -102,6 +104,7 @@ export default function Home() {
             <li><a href="#theme">Theme</a></li>
             <li><a href="#schedule">Schedule</a></li>
             <li><a href="#partners">Partners</a></li>
+            <li><a href="#judges-sponsors">Judges & Sponsors</a></li>
           </ul>
           <button className="register-btn">Register Now</button>
         </div>
@@ -122,7 +125,7 @@ export default function Home() {
             <button className="btn-primary">Apply to Hack</button>
             <button className="btn-secondary">Learn More</button>
           </div>
-          
+
           {/* Countdown Timer */}
           <div className="countdown">
             <div className="countdown-item">
@@ -151,7 +154,7 @@ export default function Home() {
             </div>
             <div className="stat">
               <div className="stat-number">$5K</div>
-              <div className="stat-label">In Prizes</div>
+              <div className="stat-label">Prize Pool</div>
             </div>
             <div className="stat">
               <div className="stat-number">100+</div>
@@ -197,7 +200,7 @@ export default function Home() {
       <section className="schedule-section" id="schedule">
         <div className="schedule-container">
           <h2 className="section-title">Event Schedule</h2>
-          
+
           <div className="day-schedule">
             <div className="day-header">Day 1 - Kickoff & Building</div>
             <div className="schedule-items">
@@ -275,6 +278,19 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Judges & Sponsors Section */}
+      <section className="judges-sponsors-section" id="judges-sponsors">
+        <h2 className="section-title">Judges & Sponsors</h2>
+        <p className="section-subtitle">
+          We're finalizing an exciting panel of judges and amazing sponsors. If you're interested in sponsoring or judging, reach out!
+        </p>
+        <div className="email-cta">
+          <a href="mailto:vsuortiz@andrew.cmu.edu" className="btn-email">
+            Contact the Organizer
+          </a>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer>
         <div className="footer-content">
@@ -284,7 +300,9 @@ export default function Home() {
             <a href="#">Code of Conduct</a>
             <a href="#">Contact</a>
           </div>
-          <p className="copyright">© 2025 Afore Agents Hackathon. Building the future, one agent at a time.</p>
+          <p className="copyright">
+            © 2025 Afore Agents Hackathon. Building the future, one agent at a time.
+          </p>
         </div>
       </footer>
     </>
