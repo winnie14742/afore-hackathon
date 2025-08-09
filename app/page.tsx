@@ -74,6 +74,34 @@ export default function Home() {
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
               A 2-day founder-focused sprint designed to uncover exceptional entrepreneurial talent by challenging participants to build venture-scale products powered by AI agents and Model Context Protocol (MCP).
             </p>
+            <div className="flex items-center justify-center gap-3 mb-8">
+              <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Co-hosted by</span>
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 relative">
+                    <Image
+                      src="/sponsors/Afore.png"
+                      alt="Afore Logo"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="font-semibold text-gray-700">Afore Capital</span>
+                </div>
+                <span className="text-gray-400">×</span>
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 relative">
+                    <Image
+                      src="/sponsors/AI_Valley.png"
+                      alt="AI Valley Logo"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="font-semibold text-gray-700">AI Valley</span>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
               <Link href="https://lu.ma/tmyl2279" className="bg-blue-900 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-800 transition-all hover:shadow-xl glow-effect">
                 Apply Now →
@@ -221,8 +249,35 @@ export default function Home() {
       {/* Sponsors Section */}
       <section id="sponsors" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Sponsors</h2>
-          <p className="text-xl text-gray-600 mb-12">Supporting the next generation of AI innovators</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Hosted By</h2>
+          <p className="text-xl text-gray-600 mb-12">Bringing together the best in AI innovation and venture capital</p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
+              <div className="h-20 mb-4 relative">
+                <Image
+                  src="/sponsors/Afore.png"
+                  alt="Afore Capital"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-2">Afore Capital</h3>
+              <p className="text-gray-600">Pre-seed & seed stage venture capital firm backing exceptional founders</p>
+            </div>
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
+              <div className="h-20 mb-4 relative">
+                <Image
+                  src="/sponsors/AI_Valley.png"
+                  alt="AI Valley"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-2">AI Valley</h3>
+              <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
+            </div>
+          </div>
+          <h3 className="text-2xl font-bold mb-8">Additional Sponsors</h3>
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
             <div className="flex items-center justify-center p-8 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-300">
               <div className="text-center text-gray-400">
@@ -292,7 +347,7 @@ export default function Home() {
                 <span className="font-bold text-xl">Agent Foundry Hackathon</span>
               </div>
               <p className="text-gray-400">Building the future with AI agents and MCP</p>
-              <p className="text-gray-400 text-sm mt-2">Hosted by Afore Capital</p>
+              <p className="text-gray-400 text-sm mt-2">Co-hosted by Afore Capital & AI Valley</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Event Details</h4>
@@ -308,9 +363,9 @@ export default function Home() {
                 <Link href="https://afore.vc" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Afore Capital →
                 </Link>
-                {/* <Link href="https://rho.com" target="_blank" className="text-gray-400 hover:text-white transition-colors">
-                  Rho →
-                </Link> */}
+                <Link href="https://aivalley.ai" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                  AI Valley →
+                </Link>
               </div>
             </div>
           </div>
