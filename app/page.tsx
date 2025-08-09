@@ -97,7 +97,7 @@ export default function Home() {
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-900 mb-2">100+</div>
-                <div className="text-gray-600">Expected Builders</div>
+                <div className="text-gray-600">Exceptional Builders</div>
               </div>
             </div>
           </div>
