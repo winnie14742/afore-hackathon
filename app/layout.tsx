@@ -15,11 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Agent Foundry Hackathon",
   description: "Agent Foundry Hackathon Project",
-  icons: {
-    icon: "/sponsors/Afore.png",
-    shortcut: "/sponsors/Afore.png",
-    apple: "/sponsors/Afore.png",
-  },
 };
 
 export default function RootLayout({
