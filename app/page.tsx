@@ -277,27 +277,172 @@ export default function Home() {
               <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-8">Additional Sponsors</h3>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
-            <div className="flex items-center justify-center p-8 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-300">
-              <div className="text-center text-gray-400">
-                <div className="text-lg font-medium">Sponsor Logo</div>
-                <div className="text-sm">Coming Soon</div>
+          <h3 className="text-2xl font-bold mb-8">Our Sponsors</h3>
+          
+          {/* Platinum Tier - Largest */}
+          <div className="mb-12">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="flex items-center justify-center p-10 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-32 w-64 flex items-center justify-center">
+                    <div>
+                      <div className="text-xl font-medium">Sponsor Logo</div>
+                      <div className="text-sm">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div className="flex items-center justify-center p-8 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-300">
-              <div className="text-center text-gray-400">
-                <div className="text-lg font-medium">Sponsor Logo</div>
-                <div className="text-sm">Coming Soon</div>
-              </div>
-            </div>
-            <div className="flex items-center justify-center p-8 bg-gray-50 rounded-2xl border-2 border-dashed border-gray-300">
-              <div className="text-center text-gray-400">
-                <div className="text-lg font-medium">Sponsor Logo</div>
-                <div className="text-sm">Coming Soon</div>
+              <div className="flex items-center justify-center p-10 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-32 w-64 flex items-center justify-center">
+                    <div>
+                      <div className="text-xl font-medium">Sponsor Logo</div>
+                      <div className="text-sm">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          {/* Gold Tier - Large */}
+          <div className="mb-12">
+            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-24 w-48 flex items-center justify-center">
+                    <div>
+                      <div className="text-lg font-medium">Sponsor Logo</div>
+                      <div className="text-sm">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-24 w-48 flex items-center justify-center">
+                    <div>
+                      <div className="text-lg font-medium">Sponsor Logo</div>
+                      <div className="text-sm">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-24 w-48 flex items-center justify-center">
+                    <div>
+                      <div className="text-lg font-medium">Sponsor Logo</div>
+                      <div className="text-sm">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Silver Tier - Medium */}
+          <div className="mb-12">
+            <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+              <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="h-16 w-32 relative">
+                  <Image
+                    src="/sponsors/amazon.png"
+                    alt="Amazon"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-16 w-32 flex items-center justify-center">
+                    <div>
+                      <div className="text-base font-medium">Sponsor Logo</div>
+                      <div className="text-xs">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-16 w-32 flex items-center justify-center">
+                    <div>
+                      <div className="text-base font-medium">Sponsor Logo</div>
+                      <div className="text-xs">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-16 w-32 flex items-center justify-center">
+                    <div>
+                      <div className="text-base font-medium">Sponsor Logo</div>
+                      <div className="text-xs">Coming Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bronze Tier - Small */}
+          <div className="mb-12">
+            <div className="grid md:grid-cols-5 gap-3 max-w-5xl mx-auto">
+              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <div>
+                      <div className="text-sm font-medium">Logo</div>
+                      <div className="text-xs">Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <div>
+                      <div className="text-sm font-medium">Logo</div>
+                      <div className="text-xs">Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <div>
+                      <div className="text-sm font-medium">Logo</div>
+                      <div className="text-xs">Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <div>
+                      <div className="text-sm font-medium">Logo</div>
+                      <div className="text-xs">Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
+                <div className="text-center text-gray-400">
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <div>
+                      <div className="text-sm font-medium">Logo</div>
+                      <div className="text-xs">Soon</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div className="bg-gradient-to-r from-blue-50 to-gray-50 rounded-2xl p-8">
             <p className="text-gray-600 mb-4">Interested in sponsoring?</p>
             <Link href="mailto:vsuortiz@andrew.cmu.edu" className="inline-flex items-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition-all">
@@ -363,9 +508,9 @@ export default function Home() {
                 <Link href="https://afore.vc" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Afore Capital →
                 </Link>
-                <Link href="https://aivalley.ai" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                {/* <Link href="https://aivalley.ai" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   AI Valley →
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
