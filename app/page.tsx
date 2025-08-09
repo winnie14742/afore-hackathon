@@ -30,6 +30,7 @@ export default function Home() {
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#theme" className="text-gray-600 hover:text-blue-900 transition-colors">Theme</Link>
+              <Link href="#prizes" className="text-gray-600 hover:text-blue-900 transition-colors">Prizes</Link>
               <Link href="#schedule" className="text-gray-600 hover:text-blue-900 transition-colors">Schedule</Link>
               <Link href="#sponsors" className="text-gray-600 hover:text-blue-900 transition-colors">Sponsors</Link>
               <Link href="#judges" className="text-gray-600 hover:text-blue-900 transition-colors">Judges</Link>
@@ -48,6 +49,7 @@ export default function Home() {
         <div className={`${mobileMenuOpen ? 'block' : 'hidden'} md:hidden bg-white border-t border-gray-100`}>
           <div className="px-4 py-3 space-y-2">
             <Link href="#theme" className="block py-2 text-gray-600">Theme</Link>
+            <Link href="#prizes" className="block py-2 text-gray-600">Prizes</Link>
             <Link href="#schedule" className="block py-2 text-gray-600">Schedule</Link>
             <Link href="#sponsors" className="block py-2 text-gray-600">Sponsors</Link>
             <Link href="#judges" className="block py-2 text-gray-600">Judges</Link>
@@ -120,8 +122,8 @@ export default function Home() {
                 <div className="text-gray-600">Prize Pool</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-900 mb-2">2</div>
-                <div className="text-gray-600">Days of Building</div>
+                <div className="text-3xl font-bold text-blue-900 mb-2">$500K-$2M+</div>
+                <div className="text-gray-600">Potential Pre-seed Funding</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-900 mb-2">100+</div>
@@ -175,8 +177,105 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Prizes Section */}
+      <section id="prizes" className="py-20 px-4 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Prizes & <span className="gradient-text">Opportunities</span>
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Win cash prizes and get the chance to launch your startup with Afore Capital
+            </p>
+          </div>
+          
+          {/* Main Prize Highlight */}
+          <div className="mb-12">
+            <div className="bg-gradient-to-br from-blue-900 to-blue-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+              <div className="flex items-center justify-center mb-6">
+                <div className="bg-white/20 backdrop-blur-sm rounded-full px-4 py-2">
+                  <span className="text-sm font-semibold uppercase tracking-wider">🚀 Exclusive Opportunity</span>
+                </div>
+              </div>
+              <h3 className="text-3xl md:text-4xl font-bold text-center mb-6">
+                Afore Capital Pre-Seed Program
+              </h3>
+              <p className="text-xl text-center max-w-3xl mx-auto mb-8 text-blue-100">
+                Selected participants will have the chance to be considered for Afore Capital's pre-seed program, 
+                investing <span className="text-white font-bold">$500K–$2M+</span> in exceptional founders.
+              </p>
+              <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div className="text-center">
+                  <div className="text-2xl font-bold mb-2">$500K–$2M+</div>
+                  <div className="text-blue-100">Investment Range</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold mb-2">Pre-Seed</div>
+                  <div className="text-blue-100">Stage Focus</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold mb-2">Direct Access</div>
+                  <div className="text-blue-100">To Afore Partners</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Additional Benefits */}
+          <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 border border-blue-100">
+            <h3 className="text-2xl font-bold mb-6 text-center">Additional Benefits for All Participants</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-900 text-white rounded-full p-2 mt-1">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Networking with VCs & Industry Leaders</h4>
+                  <p className="text-gray-600">Direct access to investors and potential mentors</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-900 text-white rounded-full p-2 mt-1">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Technical Workshops & Resources</h4>
+                  <p className="text-gray-600">Learn from experts in AI agents and MCP</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-900 text-white rounded-full p-2 mt-1">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Swag & Exclusive Merchandise</h4>
+                  <p className="text-gray-600">Limited edition hackathon gear</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-4">
+                <div className="bg-blue-900 text-white rounded-full p-2 mt-1">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1">Future Partnership Opportunities</h4>
+                  <p className="text-gray-600">Ongoing support from Afore Capital & AI Valley</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Schedule Section */}
-      <section id="schedule" className="py-20 px-4 bg-gray-50">
+      <section id="schedule" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Event Schedule</h2>
           <div className="grid md:grid-cols-2 gap-12">
