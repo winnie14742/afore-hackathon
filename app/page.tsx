@@ -26,7 +26,7 @@ export default function Home() {
                   className="object-contain"
                 />
               </div>
-              <span className="font-bold text-xl text-gray-900">Afore Agents</span>
+              <span className="font-bold text-xl text-gray-900">Agent Foundry</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#theme" className="text-gray-600 hover:text-blue-900 transition-colors">Theme</Link>
@@ -67,7 +67,7 @@ export default function Home() {
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              <span className="gradient-text">Afore Agents</span>
+              <span className="gradient-text">Agent Foundry</span>
               <br />
               <span className="text-gray-900">Hackathon</span>
             </h1>
@@ -289,7 +289,7 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-xl">Afore Agents Hackathon</span>
+                <span className="font-bold text-xl">Agent Foundry Hackathon</span>
               </div>
               <p className="text-gray-400">Building the future with AI agents and MCP</p>
               <p className="text-gray-400 text-sm mt-2">Hosted by Afore Capital</p>
@@ -315,7 +315,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Afore Agents Hackathon. All rights reserved.</p>
+            <p>&copy; 2025 Agent Foundry Hackathon. All rights reserved.</p>
           </div>
         </div>
       </footer>
