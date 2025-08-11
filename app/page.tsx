@@ -65,7 +65,7 @@ export default function Home() {
           <div className="text-center">
             <div className="inline-block mb-6">
               <span className="bg-blue-100 text-blue-900 px-4 py-2 rounded-full text-sm font-semibold">
-                2-Day Sprint • August 23-24, 2025
+                1-Day Sprint • August 23, 2025
               </span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
@@ -74,7 +74,7 @@ export default function Home() {
               <span className="text-gray-900">Hackathon</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8 leading-relaxed">
-              A 2-day founder-focused sprint designed to uncover exceptional entrepreneurial talent by challenging participants to build venture-scale products powered by AI agents and Model Context Protocol (MCP).
+              A 1-day founder-focused sprint designed to uncover exceptional entrepreneurial talent by challenging participants to build venture-scale products powered by AI agents and Model Context Protocol (MCP).
             </p>
             <div className="flex items-center justify-center gap-3 mb-8">
               <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Co-hosted by</span>
@@ -278,52 +278,27 @@ export default function Home() {
       <section id="schedule" className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Event Schedule</h2>
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Day 1 */}
+          <div className="max-w-3xl mx-auto">
             <div>
               <div className="bg-blue-900 text-white px-6 py-3 rounded-t-2xl">
-                <h3 className="text-2xl font-bold">Day 1 - August 23</h3>
+                <h3 className="text-2xl font-bold">August 23, 2025</h3>
               </div>
               <div className="bg-white rounded-b-2xl shadow-lg p-6">
                 <div className="space-y-6">
                   {[
-                    { time: '9:00 AM', title: 'Networking + Breakfast', desc: 'Connect with fellow builders and fuel up' },
-                    { time: '10:30 AM', title: 'Opening Speeches', desc: 'Welcome and challenge introduction' },
-                    { time: '12:00 PM', title: 'Lunch', desc: 'Networking lunch break' },
-                    { time: '1:00 PM', title: 'Workshops / Speakers', desc: 'Technical sessions on AI agents and MCP' },
-                    { time: '6:00 PM', title: 'Dinner', desc: 'Evening meal and team collaboration' },
-                    { time: '9:30 PM', title: 'Closing time', desc: 'Wrap up Day 1 activities' },
-                  ].map((item, index, arr) => (
-                    <div key={index} className="timeline-item">
-                      <div className="flex items-start gap-4">
-                        <div className={`timeline-dot ${index < arr.length - 1 ? '' : ''}`}>
-                          <div className="w-4 h-4 bg-blue-900 rounded-full"></div>
-                        </div>
-                        <div className={`flex-1 ${index < arr.length - 1 ? 'pb-6' : ''}`}>
-                          <div className="font-semibold text-blue-900">{item.time}</div>
-                          <div className="font-semibold text-lg">{item.title}</div>
-                          <div className="text-gray-600">{item.desc}</div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-            {/* Day 2 */}
-            <div>
-              <div className="bg-blue-900 text-white px-6 py-3 rounded-t-2xl">
-                <h3 className="text-2xl font-bold">Day 2 - August 24</h3>
-              </div>
-              <div className="bg-white rounded-b-2xl shadow-lg p-6">
-                <div className="space-y-6">
-                  {[
-                    { time: '9:00 AM', title: 'Breakfast', desc: 'Morning fuel for final development push' },
-                    { time: '11:45 AM', title: 'Note from organizers', desc: 'Important updates and reminders' },
-                    { time: '12:00 PM', title: 'Lunch', desc: 'Midday break and networking' },
-                    { time: '3:14 PM', title: 'Submission Deadline', desc: 'Final code and demo submission' },
-                    { time: '5:30 PM', title: 'Final Demos', desc: 'Teams present their solutions' },
-                    { time: '6:00 PM', title: 'Awards & Closing Ceremony', desc: 'Winner announcement & celebration' },
+                    { time: '9:00 AM', title: 'Registration & Breakfast', desc: 'Check-in, networking, and morning fuel' },
+                    { time: '10:00 AM', title: 'Opening Ceremony', desc: 'Welcome speeches and challenge introduction' },
+                    { time: '10:30 AM', title: 'Hacking Begins', desc: 'Start building your AI-powered solutions' },
+                    { time: '11:30 AM', title: 'Workshops & Mentorship', desc: 'Technical sessions on AI agents and MCP' },
+                    { time: '12:30 PM', title: 'Lunch', desc: 'Networking lunch and continued hacking' },
+                    { time: '2:00 PM', title: 'Afternoon Sprint', desc: 'Deep focus building time with mentor support' },
+                    { time: '4:00 PM', title: 'Check-in & Progress Review', desc: 'Team updates and mentor feedback' },
+                    { time: '5:30 PM', title: 'Submission Deadline', desc: 'Final code and demo submission' },
+                    { time: '6:00 PM', title: 'Dinner Break', desc: 'Evening meal while judges review' },
+                    { time: '7:00 PM', title: 'Final Presentations', desc: 'Teams present their solutions to judges' },
+                    { time: '8:30 PM', title: 'Awards Ceremony', desc: 'Winner announcement and prizes' },
+                    { time: '9:00 PM', title: 'Networking Reception', desc: 'Celebrate with fellow builders and VCs' },
+                    { time: '9:30 PM', title: 'Event Closing', desc: 'Wrap up and farewell' },
                   ].map((item, index, arr) => (
                     <div key={index} className="timeline-item">
                       <div className="flex items-start gap-4">
@@ -595,7 +570,7 @@ export default function Home() {
             </div>
             <div>
               <h4 className="font-semibold mb-4">Event Details</h4>
-              <p className="text-gray-400">August 23-24, 2025</p>
+              <p className="text-gray-400">August 23, 2025</p>
               <p className="text-gray-400">San Francisco, CA</p>
             </div>
             <div>
