@@ -11,7 +11,7 @@ export default function Home() {
   const faqs = [
     {
       question: "Is attendance mandatory?",
-      answer: "You do not have to be physically present for the entire duration of the event, only during finals submissions and demos."
+      answer: "You do not have to be physically present for the entire duration of the event, only during, check-ins, finals submissions and demos."
     },
     {
       question: "What is the judging criteria?",
