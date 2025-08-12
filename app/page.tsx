@@ -6,6 +6,42 @@ import Image from 'next/image'
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [expandedFAQ, setExpandedFAQ] = useState<number | null>(null)
+
+  const faqs = [
+    {
+      question: "Is attendance mandatory?",
+      answer: "You do not have to be physically present for the entire duration of the event, only during, check-ins, finals submissions and demos."
+    },
+    {
+      question: "What is the judging criteria?",
+      answer: "Projects are evaluated on: Approach & Idea (viability, market strategy, feasibility), Product - Technical (demo quality, technical impressiveness), Presentation (clarity and appeal), Product - Design (effort and thoughtfulness), X Factor (what makes it extraordinary), and AI Relevance & Depth (meaningful use of AI agents)."
+    },
+    {
+      question: "What are the eligibility and participation requirements?",
+      answer: "Only those accepted on lu.ma are eligible to participate. In-person participation is a day commitment on August 23rd in San Francisco (address revealed upon acceptance)."
+    },
+    {
+      question: "Should I start a new project or work on an existing one?",
+      answer: "To ensure fairness, all code must be started after 10:30 AM on the event day. We will actively check this. You cannot build on existing projects."
+    },
+    {
+      question: "What can I build?",
+      answer: "You can work on any project involving AI agents, as long as it is public on GitHub. To qualify, your project must meaningfully address those requirements."
+    },
+    {
+      question: "What are the submission requirements?",
+      answer: "Projects must be pushed to GitHub with a video demo, README file, and Devpost submission link before 5:30 PM. All submissions and commits must take place before the deadline."
+    },
+    {
+      question: "What's the maximum team size?",
+      answer: "Teams can have up to 4 people plus AI assistants."
+    },
+    {
+      question: "Can I participate alone?",
+      answer: "Yes! Both individual and team participation are welcome. You can also form teams on-site."
+    }
+  ]
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen)
@@ -34,6 +70,7 @@ export default function Home() {
               <Link href="#schedule" className="text-gray-600 hover:text-blue-900 transition-colors">Schedule</Link>
               <Link href="#sponsors" className="text-gray-600 hover:text-blue-900 transition-colors">Sponsors</Link>
               <Link href="#judges" className="text-gray-600 hover:text-blue-900 transition-colors">Judges</Link>
+              <Link href="#faq" className="text-gray-600 hover:text-blue-900 transition-colors">FAQ</Link>
               <Link href="https://lu.ma/tmyl2279" className="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800 transition-all hover:shadow-lg">
                 Apply Now
               </Link>
@@ -53,6 +90,7 @@ export default function Home() {
             <Link href="#schedule" className="block py-2 text-gray-600">Schedule</Link>
             <Link href="#sponsors" className="block py-2 text-gray-600">Sponsors</Link>
             <Link href="#judges" className="block py-2 text-gray-600">Judges</Link>
+            <Link href="#faq" className="block py-2 text-gray-600">FAQ</Link>
             <Link href="https://lu.ma/tmyl2279" className="block bg-blue-900 text-white px-6 py-2 rounded-full text-center">Apply Now</Link>
           </div>
         </div>
@@ -547,7 +585,86 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section id="faq" className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              Frequently Asked <span className="gradient-text">Questions</span>
+            </h2>
+            <p className="text-xl text-gray-600">
+              Everything you need to know about the hackathon
+            </p>
+          </div>
+          
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div
+                key={index}
+                className="bg-gradient-to-br from-gray-50 to-white rounded-2xl border border-gray-200 overflow-hidden transition-all hover:shadow-lg"
+              >
+                <button
+                  className="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                  onClick={() => setExpandedFAQ(expandedFAQ === index ? null : index)}
+                >
+                  <h3 className="text-lg font-semibold pr-4">{faq.question}</h3>
+                  <div className="flex-shrink-0">
+                    <svg
+                      className={`w-6 h-6 text-blue-900 transition-transform ${
+                        expandedFAQ === index ? 'rotate-180' : ''
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  className={`px-6 overflow-hidden transition-all duration-300 ${
+                    expandedFAQ === index ? 'max-h-96 pb-5' : 'max-h-0'
+                  }`}
+                >
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
 
+          <div className="mt-12 text-center bg-gradient-to-br from-blue-50 to-gray-50 rounded-2xl p-8">
+            <h3 className="text-xl font-semibold mb-3">Still have questions?</h3>
+            <p className="text-gray-600 mb-4">
+              Join our Discord community or reach out directly
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Link
+                href="mailto:vsuortiz@andrew.cmu.edu"
+                className="inline-flex items-center justify-center gap-2 bg-white text-blue-900 px-6 py-3 rounded-full border border-blue-200 hover:bg-blue-50 transition-all"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                Email Us
+              </Link>
+              <Link
+                href="https://lu.ma/tmyl2279"
+                className="inline-flex items-center justify-center gap-2 bg-blue-900 text-white px-6 py-3 rounded-full hover:bg-blue-800 transition-all hover:shadow-lg"
+              >
+                Apply to Participate
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-12 px-4">
