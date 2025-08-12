@@ -126,7 +126,7 @@ export default function Home() {
                 <div className="text-gray-600">Potential Pre-seed Funding</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-900 mb-2">100+</div>
+                <div className="text-3xl font-bold text-blue-900 mb-2">200+</div>
                 <div className="text-gray-600">Exceptional Builders</div>
               </div>
             </div>
