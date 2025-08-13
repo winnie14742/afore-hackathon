@@ -389,168 +389,22 @@ export default function Home() {
               <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
             </div>
           </div>
-          <h3 className="text-2xl font-bold mb-8">Our Sponsors</h3>
           
-          {/* Platinum Tier - Largest */}
+          {/* Sponsors Section - Only AWS */}
+          <h3 className="text-2xl font-bold mb-8">Our Sponsor</h3>
           <div className="mb-12">
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="flex items-center justify-center p-10 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-32 w-64 flex items-center justify-center">
-                    <div>
-                      <div className="text-xl font-medium">Sponsor Logo</div>
-                      <div className="text-sm">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-10 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-32 w-64 flex items-center justify-center">
-                    <div>
-                      <div className="text-xl font-medium">Sponsor Logo</div>
-                      <div className="text-sm">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Gold Tier - Large */}
-          <div className="mb-12">
-            <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-24 w-48 flex items-center justify-center">
-                    <div>
-                      <div className="text-lg font-medium">Sponsor Logo</div>
-                      <div className="text-sm">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-24 w-48 flex items-center justify-center">
-                    <div>
-                      <div className="text-lg font-medium">Sponsor Logo</div>
-                      <div className="text-sm">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-8 bg-gradient-to-br from-gray-50 to-white rounded-2xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-24 w-48 flex items-center justify-center">
-                    <div>
-                      <div className="text-lg font-medium">Sponsor Logo</div>
-                      <div className="text-sm">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Silver Tier - Medium */}
-          <div className="mb-12">
-            <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto">
-              <div className="flex items-center justify-center p-6 bg-white rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="h-16 w-32 relative">
+            <div className="max-w-md mx-auto">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
+                <div className="h-24 mb-4 relative">
                   <Image
                     src="/sponsors/amazon.png"
-                    alt="Amazon"
+                    alt="Amazon Web Services"
                     fill
                     className="object-contain"
                   />
                 </div>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-16 w-32 flex items-center justify-center">
-                    <div>
-                      <div className="text-base font-medium">Sponsor Logo</div>
-                      <div className="text-xs">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-16 w-32 flex items-center justify-center">
-                    <div>
-                      <div className="text-base font-medium">Sponsor Logo</div>
-                      <div className="text-xs">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-6 bg-gray-50 rounded-xl border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-16 w-32 flex items-center justify-center">
-                    <div>
-                      <div className="text-base font-medium">Sponsor Logo</div>
-                      <div className="text-xs">Coming Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Bronze Tier - Small */}
-          <div className="mb-12">
-            <div className="grid md:grid-cols-5 gap-3 max-w-5xl mx-auto">
-              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-12 w-24 flex items-center justify-center">
-                    <div>
-                      <div className="text-sm font-medium">Logo</div>
-                      <div className="text-xs">Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-12 w-24 flex items-center justify-center">
-                    <div>
-                      <div className="text-sm font-medium">Logo</div>
-                      <div className="text-xs">Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-12 w-24 flex items-center justify-center">
-                    <div>
-                      <div className="text-sm font-medium">Logo</div>
-                      <div className="text-xs">Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-12 w-24 flex items-center justify-center">
-                    <div>
-                      <div className="text-sm font-medium">Logo</div>
-                      <div className="text-xs">Soon</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center justify-center p-4 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
-                <div className="text-center text-gray-400">
-                  <div className="h-12 w-24 flex items-center justify-center">
-                    <div>
-                      <div className="text-sm font-medium">Logo</div>
-                      <div className="text-xs">Soon</div>
-                    </div>
-                  </div>
-                </div>
+                <h4 className="text-xl font-bold mb-2">Amazon Web Services</h4>
+                <p className="text-gray-600">Powering innovation with cloud computing services</p>
               </div>
             </div>
           </div>
