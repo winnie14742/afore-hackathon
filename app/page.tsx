@@ -390,12 +390,14 @@ export default function Home() {
             </div>
           </div>
           
-          {/* Sponsors Section - Only AWS */}
-          <h3 className="text-2xl font-bold mb-8">Our Sponsor</h3>
-          <div className="mb-12">
-            <div className="max-w-md mx-auto">
+          {/* Sponsors Section */}
+          <h3 className="text-2xl font-bold mb-12">Our Sponsors</h3>
+          
+          <div className="flex flex-col items-center gap-12">
+            {/* Higher Tier Sponsor - Larger */}
+            <div className="max-w-lg w-full">
               <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
-                <div className="h-24 mb-4 relative">
+                <div className="h-32 mb-4 relative">
                   <Image
                     src="/sponsors/amazon.png"
                     alt="Amazon Web Services"
@@ -403,8 +405,24 @@ export default function Home() {
                     className="object-contain"
                   />
                 </div>
-                <h4 className="text-xl font-bold mb-2">Amazon Web Services</h4>
-                <p className="text-gray-600">Powering innovation with cloud computing services</p>
+                <h4 className="text-xl font-bold mb-2 text-center">Amazon Web Services</h4>
+                <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
+              </div>
+            </div>
+
+            {/* Lower Tier Sponsors - Smaller */}
+            <div className="max-w-xs w-full mb-12">
+              <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
+                <div className="h-16 mb-3 relative">
+                  <Image
+                    src="/sponsors/VAPI.png"
+                    alt="VAPI"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-lg font-bold mb-1 text-center">VAPI</h4>
+                <p className="text-gray-600 text-sm text-center">Voice AI platform for developers</p>
               </div>
             </div>
           </div>
