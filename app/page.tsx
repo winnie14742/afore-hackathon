@@ -433,34 +433,38 @@ export default function Home() {
 
             {/* Silver Tier Sponsor */}
             <div className="max-w-md w-full">
-              <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
-                <div className="h-24 mb-4 relative">
-                  <Image
-                    src="/sponsors/Novita.png"
-                    alt="Novita AI"
-                    fill
-                    className="object-contain"
-                  />
+              <Link href="https://novita.ai/gpus?utm_source=Google_ads_gpu&utm_medium=Search_ads&utm_campaign=US_GPU&gad_source=1&gad_campaignid=21491632070&gbraid=0AAAAAqN_6WCwCPS9PCWRhA6TbeBe6A86Z&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjriouqFkhlJWMAyrS8PqYmJYKc_JwkeufTYP29KcVai_NQNDPP6MsBoCCmEQAvD_BwE" target="_blank" className="block">
+                <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="h-24 mb-4 relative">
+                    <Image
+                      src="/sponsors/Novita.png"
+                      alt="Novita AI"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
+                  <p className="text-gray-600 text-center">Affordable GPU cloud for AI infrastructure</p>
                 </div>
-                <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
-                <p className="text-gray-600 text-center">Affordable GPU cloud for AI infrastructure</p>
-              </div>
+              </Link>
             </div>
 
             {/* Lower Tier Sponsors - Smaller */}
             <div className="max-w-xs w-full mb-12">
-              <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
-                <div className="h-16 mb-3 relative">
-                  <Image
-                    src="/sponsors/VAPI.png"
-                    alt="VAPI"
-                    fill
-                    className="object-contain"
-                  />
+              <Link href="https://vapi.ai/?utm_source=gsearch&utm_campaign=ga_brand_search-vapi&utm_cid=22224367809&utm_adgroupid=173608516926&utm_adid=732882985088&utm_targetid=kwd-4189710133&utm_term=vapi&gad_source=1&gad_campaignid=22224367809&gbraid=0AAAAA-2cnbyuwZORW8-ulktlPno830MuJ&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjiPjlUKJMsUlT8O9bBG-goeAfMHh0zekrGWkQn8XkQ7yemZ5LMvk-BoCE6MQAvD_BwE" target="_blank" className="block">
+                <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
+                  <div className="h-16 mb-3 relative">
+                    <Image
+                      src="/sponsors/VAPI.png"
+                      alt="VAPI"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold mb-1 text-center">VAPI</h4>
+                  <p className="text-gray-600 text-sm text-center">Voice AI platform for developers</p>
                 </div>
-                <h4 className="text-lg font-bold mb-1 text-center">VAPI</h4>
-                <p className="text-gray-600 text-sm text-center">Voice AI platform for developers</p>
-              </div>
+              </Link>
             </div>
           </div>
 
