@@ -410,6 +410,22 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Middle Tier Sponsor - Medium */}
+            <div className="max-w-md w-full">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
+                <div className="h-24 mb-4 relative">
+                  <Image
+                    src="/sponsors/Novita.png"
+                    alt="Novita AI"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
+                <p className="text-gray-600 text-center">Affordable GPU cloud for AI infrastructure</p>
+              </div>
+            </div>
+
             {/* Lower Tier Sponsors - Smaller */}
             <div className="max-w-xs w-full mb-12">
               <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
