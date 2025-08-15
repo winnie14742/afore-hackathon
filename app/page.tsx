@@ -426,6 +426,24 @@ export default function Home() {
               </div>
             </div>
 
+            {/* Gold Tier Sponsor - Phenoml */}
+            <div className="max-w-md w-full">
+              <Link href="https://www.phenoml.com/" target="_blank" className="block">
+                <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                  <div className="h-24 mb-4 relative">
+                    <Image
+                      src="/sponsors/Phenoml.png"
+                      alt="PhenoML"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
+                  <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
+                </div>
+              </Link>
+            </div>
+
             {/* Lower Tier Sponsors - Smaller */}
             <div className="max-w-xs w-full mb-12">
               <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
