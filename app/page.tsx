@@ -394,23 +394,44 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-12">Our Sponsors</h3>
           
           <div className="flex flex-col items-center gap-12">
-            {/* Higher Tier Sponsor - Larger */}
-            <div className="max-w-lg w-full">
-              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
-                <div className="h-32 mb-4 relative">
-                  <Image
-                    src="/sponsors/amazon.png"
-                    alt="Amazon Web Services"
-                    fill
-                    className="object-contain"
-                  />
+            {/* Gold Tier Sponsors */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
+              {/* Amazon Web Services - Gold Tier */}
+              <div className="max-w-md w-full mx-auto">
+                <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                  <div className="h-24 mb-4 relative">
+                    <Image
+                      src="/sponsors/amazon.png"
+                      alt="Amazon Web Services"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
+                  <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
                 </div>
-                <h4 className="text-xl font-bold mb-2 text-center">Amazon Web Services</h4>
-                <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
+              </div>
+
+              {/* Phenoml - Gold Tier */}
+              <div className="max-w-md w-full mx-auto">
+                <Link href="https://www.phenoml.com/" target="_blank" className="block">
+                  <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                    <div className="h-24 mb-4 relative">
+                      <Image
+                        src="/sponsors/Phenoml.png"
+                        alt="PhenoML"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
+                    <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
+                  </div>
+                </Link>
               </div>
             </div>
 
-            {/* Middle Tier Sponsor - Medium */}
+            {/* Silver Tier Sponsor */}
             <div className="max-w-md w-full">
               <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
                 <div className="h-24 mb-4 relative">
@@ -424,24 +445,6 @@ export default function Home() {
                 <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
                 <p className="text-gray-600 text-center">Affordable GPU cloud for AI infrastructure</p>
               </div>
-            </div>
-
-            {/* Gold Tier Sponsor - Phenoml */}
-            <div className="max-w-md w-full">
-              <Link href="https://www.phenoml.com/" target="_blank" className="block">
-                <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                  <div className="h-24 mb-4 relative">
-                    <Image
-                      src="/sponsors/Phenoml.png"
-                      alt="PhenoML"
-                      fill
-                      className="object-contain"
-                    />
-                  </div>
-                  <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
-                  <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
-                </div>
-              </Link>
             </div>
 
             {/* Lower Tier Sponsors - Smaller */}
