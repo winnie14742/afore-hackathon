@@ -53,7 +53,7 @@ export default function Home() {
       <nav className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
+            <Link href="https://www.afore.vc/" target="_blank" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
               <div className="w-8 h-8 relative">
                 <Image
                   src="/sponsors/Afore.png"
@@ -63,7 +63,7 @@ export default function Home() {
                 />
               </div>
               <span className="font-bold text-xl text-gray-900">Agent Foundry</span>
-            </div>
+            </Link>
             <div className="hidden md:flex items-center space-x-8">
               <Link href="#theme" className="text-gray-600 hover:text-blue-900 transition-colors">Theme</Link>
               <Link href="#prizes" className="text-gray-600 hover:text-blue-900 transition-colors">Prizes</Link>
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="flex items-center justify-center gap-3 mb-8">
               <span className="text-sm font-semibold text-gray-500 uppercase tracking-wider">Co-hosted by</span>
               <div className="flex items-center gap-4">
-                <div className="flex items-center gap-2">
+                <Link href="https://www.afore.vc/" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                   <div className="w-6 h-6 relative">
                     <Image
                       src="/sponsors/Afore.png"
@@ -127,7 +127,7 @@ export default function Home() {
                     />
                   </div>
                   <span className="font-semibold text-gray-700">Afore Capital</span>
-                </div>
+                </Link>
                 <span className="text-gray-400">×</span>
                 <div className="flex items-center gap-2">
                   <div className="w-6 h-6 relative">
@@ -364,18 +364,20 @@ export default function Home() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Hosted By</h2>
           <p className="text-xl text-gray-600 mb-12">Bringing together the best in AI innovation and venture capital</p>
           <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-16">
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
-              <div className="h-20 mb-4 relative">
-                <Image
-                  src="/sponsors/Afore.png"
-                  alt="Afore Capital"
-                  fill
-                  className="object-contain"
-                />
+            <Link href="https://www.afore.vc/" target="_blank" className="block">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
+                <div className="h-20 mb-4 relative">
+                  <Image
+                    src="/sponsors/Afore.png"
+                    alt="Afore Capital"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-2">Afore Capital</h3>
+                <p className="text-gray-600">Pre-seed & seed stage venture capital firm backing exceptional founders</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">Afore Capital</h3>
-              <p className="text-gray-600">Pre-seed & seed stage venture capital firm backing exceptional founders</p>
-            </div>
+            </Link>
             <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
               <div className="h-20 mb-4 relative">
                 <Image
@@ -398,18 +400,20 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
               {/* Amazon Web Services - Gold Tier */}
               <div className="max-w-md w-full mx-auto">
-                <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                  <div className="h-24 mb-4 relative">
-                    <Image
-                      src="/sponsors/amazon.png"
-                      alt="Amazon Web Services"
-                      fill
-                      className="object-contain"
-                    />
+                <Link href="https://aws.amazon.com/" target="_blank" className="block">
+                  <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                    <div className="h-24 mb-4 relative">
+                      <Image
+                        src="/sponsors/amazon.png"
+                        alt="Amazon Web Services"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
+                    <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
                   </div>
-                  <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
-                  <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
-                </div>
+                </Link>
               </div>
 
               {/* Phenoml - Gold Tier */}
@@ -584,7 +588,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
-              <div className="flex items-center space-x-2 mb-4">
+              <Link href="https://www.afore.vc/" target="_blank" className="flex items-center space-x-2 mb-4 hover:opacity-80 transition-opacity w-fit">
                 <div className="w-8 h-8 relative">
                   <Image
                     src="/sponsors/Afore-White.png"
@@ -594,7 +598,7 @@ export default function Home() {
                   />
                 </div>
                 <span className="font-bold text-xl">Agent Foundry Hackathon</span>
-              </div>
+              </Link>
               <p className="text-gray-400">Building the future with AI agents and MCP</p>
               <p className="text-gray-400 text-sm mt-2">Co-hosted by Afore Capital & AI Valley</p>
             </div>
@@ -609,7 +613,7 @@ export default function Home() {
                 vsuortiz@andrew.cmu.edu
               </Link>
               <div className="flex gap-4 mt-4">
-                <Link href="https://afore.vc" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.afore.vc/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Afore Capital →
                 </Link>
                 {/* <Link href="https://aivalley.ai" target="_blank" className="text-gray-400 hover:text-white transition-colors">
