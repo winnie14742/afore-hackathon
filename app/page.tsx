@@ -396,44 +396,62 @@ export default function Home() {
           <h3 className="text-2xl font-bold mb-12">Our Sponsors</h3>
           
           <div className="flex flex-col items-center gap-12">
-            {/* Gold Tier Sponsors */}
-            <div className="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
-              {/* Amazon Web Services - Gold Tier */}
-              <div className="max-w-md w-full mx-auto">
-                <Link href="https://aws.amazon.com/" target="_blank" className="block">
-                  <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                    <div className="h-24 mb-4 relative">
-                      <Image
-                        src="/sponsors/amazon.png"
-                        alt="Amazon Web Services"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
-                    <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
-                  </div>
-                </Link>
-              </div>
+                         {/* Gold Tier Sponsors */}
+             <div className="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
+               {/* Amazon Web Services - Gold Tier */}
+               <div className="max-w-md w-full mx-auto">
+                 <Link href="https://aws.amazon.com/" target="_blank" className="block">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-24 mb-4 relative">
+                       <Image
+                         src="/sponsors/amazon.png"
+                         alt="Amazon Web Services"
+                         fill
+                         className="object-contain"
+                       />
+                     </div>
+                     <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
+                     <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
+                   </div>
+                 </Link>
+               </div>
+ 
+               {/* Phenoml - Gold Tier */}
+               <div className="max-w-md w-full mx-auto">
+                 <Link href="https://www.phenoml.com/" target="_blank" className="block">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-24 mb-4 relative">
+                       <Image
+                         src="/sponsors/Phenoml.png"
+                         alt="PhenoML"
+                         fill
+                         className="object-contain"
+                       />
+                     </div>
+                     <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
+                     <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
+                   </div>
+                 </Link>
+               </div>
 
-              {/* Phenoml - Gold Tier */}
-              <div className="max-w-md w-full mx-auto">
-                <Link href="https://www.phenoml.com/" target="_blank" className="block">
-                  <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                    <div className="h-24 mb-4 relative">
-                      <Image
-                        src="/sponsors/Phenoml.png"
-                        alt="PhenoML"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
-                    <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
-                    <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
-                  </div>
-                </Link>
-              </div>
-            </div>
+               {/* Composio - Gold Tier */}
+               <div className="max-w-md w-full mx-auto">
+                 <Link href="https://composio.dev/" target="_blank" className="block">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-24 mb-4 relative">
+                       <Image
+                         src="/sponsors/Composio.png"
+                         alt="Composio"
+                         fill
+                         className="object-contain"
+                       />
+                     </div>
+                     <h4 className="text-lg font-bold mb-2 text-center">Composio</h4>
+                     <p className="text-gray-600 text-center">10,000+ evolving tools and integrations for AI agents</p>
+                   </div>
+                 </Link>
+               </div>
+             </div>
 
             {/* Silver Tier Sponsor */}
             <div className="max-w-md w-full">
