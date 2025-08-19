@@ -129,7 +129,7 @@ export default function Home() {
                   <span className="font-semibold text-gray-700">Afore Capital</span>
                 </Link>
                 <span className="text-gray-400">×</span>
-                <div className="flex items-center gap-2">
+                <Link href="https://aivalley.io/" target="_blank" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                   <div className="w-6 h-6 relative">
                     <Image
                       src="/sponsors/AI_Valley.png"
@@ -139,7 +139,7 @@ export default function Home() {
                     />
                   </div>
                   <span className="font-semibold text-gray-700">AI Valley</span>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -378,18 +378,20 @@ export default function Home() {
                 <p className="text-gray-600">Pre-seed & seed stage venture capital firm backing exceptional founders</p>
               </div>
             </Link>
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
-              <div className="h-20 mb-4 relative">
-                <Image
-                  src="/sponsors/AI_Valley.png"
-                  alt="AI Valley"
-                  fill
-                  className="object-contain"
-                />
+            <Link href="https://aivalley.io/" target="_blank" className="block">
+              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
+                <div className="h-20 mb-4 relative">
+                  <Image
+                    src="/sponsors/AI_Valley.png"
+                    alt="AI Valley"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-2">AI Valley</h3>
+                <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
               </div>
-              <h3 className="text-xl font-bold mb-2">AI Valley</h3>
-              <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
-            </div>
+            </Link>
           </div>
           
           {/* Sponsors Section */}
@@ -466,7 +468,7 @@ export default function Home() {
                     />
                   </div>
                   <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
-                  <p className="text-gray-600 text-center">Affordable GPU cloud for AI infrastructure</p>
+                  <p className="text-gray-600 text-center">Affordable AI Cloud for Agents & Inference</p>
                 </div>
               </Link>
             </div>
@@ -507,12 +509,75 @@ export default function Home() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Meet the Judges</h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3, 4, 5, 6].map((index) => (
-              <div key={index} className="bg-white rounded-2xl p-8 text-center border-2 border-dashed border-gray-300">
+            {/* Abhi CVK */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+                  <Image
+                    src="/judges/Abhi.jpeg"
+                    alt="Abhi CVK"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Abhi CVK</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">2x YC Founder | Founder at Basic</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                  Abhi is a 2x YC founder + PM with experiences across seed to series C startups. He previously built software to close $600M in property, and led teams at EY Parthenon to conduct $20B in product diligence. He also helped grow a startup from Series A to C ($750M) valuation in just one year.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/abhicvk/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            {/* Sumana Malkapuram */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+                  <Image
+                    src="/judges/Sumana.JPG"
+                    alt="Sumana Malkapuram"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Sumana Malkapuram</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Lead Security Software Engineer<br />Netflix</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                  Sumana is a Lead Security Software Engineer at Netflix, specializing in enterprise identity and access management, authentication modernization, and AI-driven identity threat protection. She has been recognized as an Identity Innovator by leading Identity platform in 2024 and frequently contributes to advancing security practices across the industry.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/sumana-malkapuram/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            {/* Placeholder judges */}
+            {[1, 2, 3, 4].map((index) => (
+              <div key={index} className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
                 <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl text-gray-400">?</span>
                 </div>
-                <h3 className="text-xl font-bold mb-2 text-gray-400">Judge TBA</h3>
+                <h3 className="text-lg font-bold mb-2 text-gray-400">Judge TBA</h3>
                 <p className="text-gray-400">Coming Soon</p>
               </div>
             ))}
@@ -634,9 +699,9 @@ export default function Home() {
                 <Link href="https://www.afore.vc/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   Afore Capital →
                 </Link>
-                {/* <Link href="https://aivalley.ai" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://aivalley.io/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                   AI Valley →
-                </Link> */}
+                </Link>
               </div>
             </div>
           </div>
