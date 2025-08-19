@@ -508,11 +508,11 @@ export default function Home() {
       <section id="judges" className="py-20 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">Meet the Judges</h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-8 items-start">
             {/* Abhi CVK */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
                   <Image
                     src="/judges/Abhi.jpeg"
                     alt="Abhi CVK"
@@ -522,7 +522,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Abhi CVK</h3>
                 <p className="text-xs text-blue-900 font-semibold mb-3">2x YC Founder | Founder at Basic</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                   Abhi is a 2x YC founder + PM with experiences across seed to series C startups. He previously built software to close $600M in property, and led teams at EY Parthenon to conduct $20B in product diligence. He also helped grow a startup from Series A to C ($750M) valuation in just one year.
                 </p>
                 <div className="flex justify-center gap-3 mt-auto">
@@ -541,9 +541,9 @@ export default function Home() {
             </div>
             
             {/* Sumana Malkapuram */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
                   <Image
                     src="/judges/Sumana.JPG"
                     alt="Sumana Malkapuram"
@@ -553,7 +553,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Sumana Malkapuram</h3>
                 <p className="text-xs text-blue-900 font-semibold mb-3">Lead Security Software Engineer<br />Netflix</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                   Sumana is a Lead Security Software Engineer at Netflix, specializing in enterprise identity and access management, authentication modernization, and AI-driven identity threat protection. She has been recognized as an Identity Innovator by leading Identity platform in 2024 and frequently contributes to advancing security practices across the industry.
                 </p>
                 <div className="flex justify-center gap-3 mt-auto">
@@ -572,9 +572,9 @@ export default function Home() {
             </div>
             
             {/* Bhavin Modi */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
                   <Image
                     src="/judges/Bhavin.png"
                     alt="Bhavin Modi"
@@ -584,7 +584,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Bhavin Modi</h3>
                 <p className="text-xs text-blue-900 font-semibold mb-3">Member of Technical Staff<br />OpenAI</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                   Bhavin is a Member of Technical Staff at OpenAI, where he builds core infrastructure that powers cutting-edge AI systems. Over the past decade, he has led engineering for some of the most ambitious tech initiatives—developing the Oculus VR operating system at Meta, launching Novi's peer-to-peer stablecoin payments platform, and building crypto-native infrastructure at TaxBit. Bhavin is known for turning frontier ideas into real-world systems through deep technical rigor and first-principles thinking.
                 </p>
                 <div className="flex justify-center gap-3 mt-auto">
@@ -603,9 +603,9 @@ export default function Home() {
             </div>
             
             {/* Sujata Sridharan */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
                   <Image
                     src="/judges/Sujata.jpg"
                     alt="Sujata Sridharan"
@@ -615,7 +615,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Sujata Sridharan</h3>
                 <p className="text-xs text-blue-900 font-semibold mb-3">Senior Software Engineer<br />Bolt</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                   Sujata is a Senior Software Engineer at Bolt, with prior experience at Microsoft and Amazon. She specializes in AI-driven solutions and large-scale backend systems, holds a patent-pending invention in AI checkout technology, and is passionate about mentoring and helping teams bring ideas to life.
                 </p>
                 <div className="flex justify-center gap-3 mt-auto">
@@ -634,9 +634,9 @@ export default function Home() {
             </div>
             
             {/* Dhyey Mavani */}
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-              <div className="flex flex-col items-center text-center">
-                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
                   <Image
                     src="/judges/Dhyey.jpeg"
                     alt="Dhyey Mavani"
@@ -646,7 +646,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-lg font-bold mb-2">Dhyey Mavani</h3>
                 <p className="text-xs text-blue-900 font-semibold mb-3">Software Engineer, Generative AI<br />LinkedIn</p>
-                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
                   Dhyey is a Software Engineer on the Generative AI team at LinkedIn, where he develops scalable inference systems powering large-scale recommendation and generative models. His recent work includes building a GPU-accelerated inference engine in Rust and PyTorch, cutting P99 latency by over 2x and saving ~$1M in compute costs. He has also won and judged leading AI competitions, including HackMIT, and was selected for Y Combinator's inaugural AI Startup School. Dhyey is passionate about building AI systems that are both technically efficient and thoughtfully aligned with human workflows.
                 </p>
                 <div className="flex justify-center gap-3 mt-auto">
@@ -666,12 +666,12 @@ export default function Home() {
             
             {/* Placeholder judges */}
             <div className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
-              <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-2xl text-gray-400">?</span>
-              </div>
+                <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-2xl text-gray-400">?</span>
+                </div>
               <h3 className="text-lg font-bold mb-2 text-gray-400">Judge TBA</h3>
-              <p className="text-gray-400">Coming Soon</p>
-            </div>
+                <p className="text-gray-400">Coming Soon</p>
+              </div>
           </div>
         </div>
       </section>
