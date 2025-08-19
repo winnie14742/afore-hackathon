@@ -399,12 +399,12 @@ export default function Home() {
           
           <div className="flex flex-col items-center gap-12">
                          {/* Gold Tier Sponsors */}
-             <div className="grid md:grid-cols-3 gap-8 max-w-6xl w-full">
+             <div className="grid md:grid-cols-3 gap-8 max-w-7xl w-full">
                {/* Amazon Web Services - Gold Tier */}
                <div className="max-w-md w-full mx-auto">
                  <Link href="https://aws.amazon.com/" target="_blank" className="block">
-                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                     <div className="h-24 mb-4 relative">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-28 mb-4 relative">
                        <Image
                          src="/sponsors/amazon.png"
                          alt="Amazon Web Services"
@@ -412,8 +412,8 @@ export default function Home() {
                          className="object-contain"
                        />
                      </div>
-                     <h4 className="text-lg font-bold mb-2 text-center">Amazon Web Services</h4>
-                     <p className="text-gray-600 text-center">Powering innovation with cloud computing services</p>
+                     <h4 className="text-xl font-bold mb-2 text-center">Amazon Web Services</h4>
+                     <p className="text-gray-600 text-base text-center">Powering innovation with cloud computing services</p>
                    </div>
                  </Link>
                </div>
@@ -421,8 +421,8 @@ export default function Home() {
                {/* Phenoml - Gold Tier */}
                <div className="max-w-md w-full mx-auto">
                  <Link href="https://www.phenoml.com/" target="_blank" className="block">
-                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                     <div className="h-24 mb-4 relative">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-28 mb-4 relative">
                        <Image
                          src="/sponsors/Phenoml.png"
                          alt="PhenoML"
@@ -430,8 +430,8 @@ export default function Home() {
                          className="object-contain"
                        />
                      </div>
-                     <h4 className="text-lg font-bold mb-2 text-center">PhenoML</h4>
-                     <p className="text-gray-600 text-center">Powering healthcare AI with AI-native building blocks</p>
+                     <h4 className="text-xl font-bold mb-2 text-center">PhenoML</h4>
+                     <p className="text-gray-600 text-base text-center">Powering healthcare AI with AI-native building blocks</p>
                    </div>
                  </Link>
                </div>
@@ -439,8 +439,8 @@ export default function Home() {
                {/* Composio - Gold Tier */}
                <div className="max-w-md w-full mx-auto">
                  <Link href="https://composio.dev/" target="_blank" className="block">
-                   <div className="bg-gradient-to-br from-yellow-50 to-white p-7 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
-                     <div className="h-24 mb-4 relative">
+                   <div className="bg-gradient-to-br from-yellow-50 to-white p-8 rounded-2xl border-2 border-yellow-200 hover:shadow-xl transition-shadow">
+                     <div className="h-28 mb-4 relative">
                        <Image
                          src="/sponsors/Composio.png"
                          alt="Composio"
@@ -448,18 +448,18 @@ export default function Home() {
                          className="object-contain"
                        />
                      </div>
-                     <h4 className="text-lg font-bold mb-2 text-center">Composio</h4>
-                     <p className="text-gray-600 text-center">10,000+ evolving tools and integrations for AI agents</p>
+                     <h4 className="text-xl font-bold mb-2 text-center">Composio</h4>
+                     <p className="text-gray-600 text-base text-center">10,000+ evolving tools and integrations for AI agents</p>
                    </div>
                  </Link>
                </div>
              </div>
 
             {/* Silver Tier Sponsor */}
-            <div className="max-w-md w-full">
+            <div className="max-w-sm w-full">
               <Link href="https://novita.ai/gpus?utm_source=Google_ads_gpu&utm_medium=Search_ads&utm_campaign=US_GPU&gad_source=1&gad_campaignid=21491632070&gbraid=0AAAAAqN_6WCwCPS9PCWRhA6TbeBe6A86Z&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjriouqFkhlJWMAyrS8PqYmJYKc_JwkeufTYP29KcVai_NQNDPP6MsBoCCmEQAvD_BwE" target="_blank" className="block">
-                <div className="bg-gradient-to-br from-blue-50 to-white p-7 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
-                  <div className="h-24 mb-4 relative">
+                <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
+                  <div className="h-20 mb-3 relative">
                     <Image
                       src="/sponsors/Novita.png"
                       alt="Novita AI"
@@ -467,28 +467,49 @@ export default function Home() {
                       className="object-contain"
                     />
                   </div>
-                  <h4 className="text-lg font-bold mb-2 text-center">Novita AI</h4>
-                  <p className="text-gray-600 text-center">Affordable AI Cloud for Agents & Inference</p>
+                  <h4 className="text-base font-bold mb-2 text-center">Novita AI</h4>
+                  <p className="text-gray-600 text-sm text-center">Affordable AI Cloud for Agents & Inference</p>
                 </div>
               </Link>
             </div>
 
-            {/* Lower Tier Sponsors - Smaller */}
-            <div className="max-w-xs w-full mb-12">
-              <Link href="https://vapi.ai/?utm_source=gsearch&utm_campaign=ga_brand_search-vapi&utm_cid=22224367809&utm_adgroupid=173608516926&utm_adid=732882985088&utm_targetid=kwd-4189710133&utm_term=vapi&gad_source=1&gad_campaignid=22224367809&gbraid=0AAAAA-2cnbyuwZORW8-ulktlPno830MuJ&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjiPjlUKJMsUlT8O9bBG-goeAfMHh0zekrGWkQn8XkQ7yemZ5LMvk-BoCE6MQAvD_BwE" target="_blank" className="block">
-                <div className="bg-gradient-to-br from-gray-50 to-white p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition-shadow">
-                  <div className="h-16 mb-3 relative">
-                    <Image
-                      src="/sponsors/VAPI.png"
-                      alt="VAPI"
-                      fill
-                      className="object-contain"
-                    />
+            {/* Bronze Tier Sponsors */}
+            <div className="grid md:grid-cols-2 gap-6 max-w-3xl w-full mb-12">
+              {/* Mercor - Bronze Tier */}
+              <div className="max-w-xs w-full mx-auto">
+                <Link href="https://mercor.com/" target="_blank" className="block">
+                  <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
+                    <div className="h-16 mb-3 relative">
+                      <Image
+                        src="/sponsors/Mercor.png"
+                        alt="Mercor"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="text-sm font-bold mb-1 text-center">Mercor</h4>
+                    <p className="text-gray-600 text-xs text-center">Elite AI talent matching platform</p>
                   </div>
-                  <h4 className="text-lg font-bold mb-1 text-center">VAPI</h4>
-                  <p className="text-gray-600 text-sm text-center">Voice AI platform for developers</p>
-                </div>
-              </Link>
+                </Link>
+              </div>
+
+              {/* VAPI - Bronze Tier */}
+              <div className="max-w-xs w-full mx-auto">
+                <Link href="https://vapi.ai/?utm_source=gsearch&utm_campaign=ga_brand_search-vapi&utm_cid=22224367809&utm_adgroupid=173608516926&utm_adid=732882985088&utm_targetid=kwd-4189710133&utm_term=vapi&gad_source=1&gad_campaignid=22224367809&gbraid=0AAAAA-2cnbyuwZORW8-ulktlPno830MuJ&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjiPjlUKJMsUlT8O9bBG-goeAfMHh0zekrGWkQn8XkQ7yemZ5LMvk-BoCE6MQAvD_BwE" target="_blank" className="block">
+                  <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
+                    <div className="h-16 mb-3 relative">
+                      <Image
+                        src="/sponsors/VAPI.png"
+                        alt="VAPI"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="text-sm font-bold mb-1 text-center">VAPI</h4>
+                    <p className="text-gray-600 text-xs text-center">Voice AI platform for developers</p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
 
