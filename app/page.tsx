@@ -379,18 +379,18 @@ export default function Home() {
               </div>
             </Link>
             <Link href="https://aivalley.io/" target="_blank" className="block">
-              <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
-                <div className="h-20 mb-4 relative">
-                  <Image
-                    src="/sponsors/AI_Valley.png"
-                    alt="AI Valley"
-                    fill
-                    className="object-contain"
-                  />
-                </div>
-                <h3 className="text-xl font-bold mb-2">AI Valley</h3>
-                <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-blue-100 card-hover">
+              <div className="h-20 mb-4 relative">
+                <Image
+                  src="/sponsors/AI_Valley.png"
+                  alt="AI Valley"
+                  fill
+                  className="object-contain"
+                />
               </div>
+              <h3 className="text-xl font-bold mb-2">AI Valley</h3>
+              <p className="text-gray-600">Premier AI community fostering innovation and collaboration</p>
+            </div>
             </Link>
           </div>
           
@@ -571,8 +571,70 @@ export default function Home() {
               </div>
             </div>
             
+            {/* Bhavin Modi */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+                  <Image
+                    src="/judges/Bhavin.png"
+                    alt="Bhavin Modi"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Bhavin Modi</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Member of Technical Staff<br />OpenAI</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                  Bhavin is a Member of Technical Staff at OpenAI, where he builds core infrastructure that powers cutting-edge AI systems. Over the past decade, he has led engineering for some of the most ambitious tech initiatives—developing the Oculus VR operating system at Meta, launching Novi's peer-to-peer stablecoin payments platform, and building crypto-native infrastructure at TaxBit. Bhavin is known for turning frontier ideas into real-world systems through deep technical rigor and first-principles thinking.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/bhavinmodi92/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
+            {/* Sujata Sridharan */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+                  <Image
+                    src="/judges/Sujata.jpg"
+                    alt="Sujata Sridharan"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Sujata Sridharan</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Senior Software Engineer<br />Bolt</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                  Sujata is a Senior Software Engineer at Bolt, with prior experience at Microsoft and Amazon. She specializes in AI-driven solutions and large-scale backend systems, holds a patent-pending invention in AI checkout technology, and is passionate about mentoring and helping teams bring ideas to life.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/sridharansujata/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
+              </div>
+            </div>
+            
             {/* Placeholder judges */}
-            {[1, 2, 3, 4].map((index) => (
+            {[1, 2].map((index) => (
               <div key={index} className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
                 <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
                   <span className="text-2xl text-gray-400">?</span>
