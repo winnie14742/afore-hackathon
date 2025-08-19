@@ -633,16 +633,45 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Placeholder judges */}
-            {[1, 2].map((index) => (
-              <div key={index} className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
-                <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl text-gray-400">?</span>
+            {/* Dhyey Mavani */}
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+              <div className="flex flex-col items-center text-center">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4">
+                  <Image
+                    src="/judges/Dhyey.jpeg"
+                    alt="Dhyey Mavani"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-                <h3 className="text-lg font-bold mb-2 text-gray-400">Judge TBA</h3>
-                <p className="text-gray-400">Coming Soon</p>
+                <h3 className="text-lg font-bold mb-2">Dhyey Mavani</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Software Engineer, Generative AI<br />LinkedIn</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-6">
+                  Dhyey is a Software Engineer on the Generative AI team at LinkedIn, where he develops scalable inference systems powering large-scale recommendation and generative models. His recent work includes building a GPU-accelerated inference engine in Rust and PyTorch, cutting P99 latency by over 2x and saving ~$1M in compute costs. He has also won and judged leading AI competitions, including HackMIT, and was selected for Y Combinator's inaugural AI Startup School. Dhyey is passionate about building AI systems that are both technically efficient and thoughtfully aligned with human workflows.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/dhyey-mavani/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
               </div>
-            ))}
+            </div>
+            
+            {/* Placeholder judges */}
+            <div className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
+              <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
+                <span className="text-2xl text-gray-400">?</span>
+              </div>
+              <h3 className="text-lg font-bold mb-2 text-gray-400">Judge TBA</h3>
+              <p className="text-gray-400">Coming Soon</p>
+            </div>
           </div>
         </div>
       </section>
