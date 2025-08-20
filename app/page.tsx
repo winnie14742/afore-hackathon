@@ -715,6 +715,37 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            
+            {/* Ashutosh Datar */}
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
+                  <Image
+                    src="/judges/Ashutosh.png"
+                    alt="Ashutosh Datar"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-bold mb-2">Ashutosh Datar</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Tech Lead & Member of Technical Staff<br />Pure Storage</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
+                  Ashutosh is a Tech Lead and Member of Technical Staff at Pure Storage, specializing in distributed systems and scalable APIs that drive intelligent storage infrastructure. On a personal level, his passion lies in building next-generation edutech platforms—with a professional focus on scalable infrastructure for intelligent storage management across heterogeneous systems.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/datarashutosh/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
