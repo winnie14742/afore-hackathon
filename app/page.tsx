@@ -325,8 +325,8 @@ export default function Home() {
                 <div className="space-y-6">
                   {[
                     { time: '9:00 AM', title: 'Registration & Breakfast', desc: 'Check-in, networking, and morning fuel' },
-                    { time: '10:00 AM', title: 'Opening Ceremony', desc: 'Welcome speeches and challenge introduction' },
-                    { time: '10:30 AM', title: 'Hacking Begins', desc: 'Start building your AI-powered solutions' },
+                    { time: '10:30 AM', title: 'Opening Ceremony', desc: 'Welcome speeches and challenge introduction' },
+                    { time: '11:00 AM', title: 'Hacking Begins', desc: 'Start building your AI-powered solutions' },
                     { time: '11:30 AM', title: 'Workshops & Mentorship', desc: 'Technical sessions on AI agents and MCP' },
                     { time: '12:30 PM', title: 'Lunch', desc: 'Networking lunch and continued hacking' },
                     { time: '2:00 PM', title: 'Afternoon Sprint', desc: 'Deep focus building time with mentor support' },
