@@ -495,20 +495,20 @@ export default function Home() {
 
               {/* VAPI - Bronze Tier */}
               <div className="max-w-xs w-full mx-auto">
-                <Link href="https://vapi.ai/?utm_source=gsearch&utm_campaign=ga_brand_search-vapi&utm_cid=22224367809&utm_adgroupid=173608516926&utm_adid=732882985088&utm_targetid=kwd-4189710133&utm_term=vapi&gad_source=1&gad_campaignid=22224367809&gbraid=0AAAAA-2cnbyuwZORW8-ulktlPno830MuJ&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjiPjlUKJMsUlT8O9bBG-goeAfMHh0zekrGWkQn8XkQ7yemZ5LMvk-BoCE6MQAvD_BwE" target="_blank" className="block">
+              <Link href="https://vapi.ai/?utm_source=gsearch&utm_campaign=ga_brand_search-vapi&utm_cid=22224367809&utm_adgroupid=173608516926&utm_adid=732882985088&utm_targetid=kwd-4189710133&utm_term=vapi&gad_source=1&gad_campaignid=22224367809&gbraid=0AAAAA-2cnbyuwZORW8-ulktlPno830MuJ&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjiPjlUKJMsUlT8O9bBG-goeAfMHh0zekrGWkQn8XkQ7yemZ5LMvk-BoCE6MQAvD_BwE" target="_blank" className="block">
                   <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
-                    <div className="h-16 mb-3 relative">
-                      <Image
-                        src="/sponsors/VAPI.png"
-                        alt="VAPI"
-                        fill
-                        className="object-contain"
-                      />
-                    </div>
+                  <div className="h-16 mb-3 relative">
+                    <Image
+                      src="/sponsors/VAPI.png"
+                      alt="VAPI"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
                     <h4 className="text-sm font-bold mb-1 text-center">VAPI</h4>
                     <p className="text-gray-600 text-xs text-center">Voice AI platform for developers</p>
-                  </div>
-                </Link>
+                </div>
+              </Link>
               </div>
             </div>
           </div>
@@ -685,14 +685,36 @@ export default function Home() {
               </div>
             </div>
             
-            {/* Placeholder judges */}
-            <div className="bg-white rounded-2xl p-6 text-center border-2 border-dashed border-gray-300">
-                <div className="w-24 h-24 bg-gray-100 rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-2xl text-gray-400">?</span>
+            {/* Sandeep Kaipu */}
+            <div className="group bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 hover:z-10 relative">
+              <div className="flex flex-col items-center text-center h-full">
+                <div className="w-24 h-24 rounded-full overflow-hidden relative mb-4 flex-shrink-0">
+                  <Image
+                    src="/judges/Sandeep.JPG"
+                    alt="Sandeep Kaipu"
+                    fill
+                    className="object-cover"
+                  />
                 </div>
-              <h3 className="text-lg font-bold mb-2 text-gray-400">Judge TBA</h3>
-                <p className="text-gray-400">Coming Soon</p>
+                <h3 className="text-lg font-bold mb-2">Sandeep Kaipu</h3>
+                <p className="text-xs text-blue-900 font-semibold mb-3">Engineering Manager<br />Broadcom</p>
+                <p className="text-gray-600 text-xs leading-relaxed mb-4 line-clamp-4 group-hover:line-clamp-none transition-all duration-300">
+                  Sandeep is an Engineering Manager at Broadcom, leading Enterprise AI Infrastructure Platform Development and Engineering teams. He brings deep expertise in building and scaling AI infrastructure solutions that power enterprise-grade applications and services.
+                </p>
+                <div className="flex justify-center gap-3 mt-auto">
+                  <Link 
+                    href="https://www.linkedin.com/in/nagasandeeprkaipu/" 
+                    target="_blank"
+                    className="inline-flex items-center gap-1 text-blue-600 hover:text-blue-800 transition-colors text-sm"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                  </Link>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </section>
