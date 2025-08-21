@@ -475,7 +475,7 @@ export default function Home() {
 
             {/* Silver Tier Sponsor */}
             <div className="max-w-sm w-full">
-              <Link href="https://novita.ai/gpus?utm_source=Google_ads_gpu&utm_medium=Search_ads&utm_campaign=US_GPU&gad_source=1&gad_campaignid=21491632070&gbraid=0AAAAAqN_6WCwCPS9PCWRhA6TbeBe6A86Z&gclid=CjwKCAjwtfvEBhAmEiwA-DsKjriouqFkhlJWMAyrS8PqYmJYKc_JwkeufTYP29KcVai_NQNDPP6MsBoCCmEQAvD_BwE" target="_blank" className="block">
+              <Link href="https://novita.ai/sandbox" target="_blank" className="block">
                 <div className="bg-gradient-to-br from-blue-50 to-white p-6 rounded-2xl border border-blue-100 hover:shadow-xl transition-shadow">
                   <div className="h-20 mb-3 relative">
                     <Image
