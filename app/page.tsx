@@ -492,7 +492,7 @@ export default function Home() {
             </div>
 
             {/* Bronze Tier Sponsors */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-3xl w-full mb-12">
+            <div className="grid md:grid-cols-3 gap-6 max-w-4xl w-full mb-12">
               {/* Mercor - Bronze Tier */}
               <div className="max-w-xs w-full mx-auto">
                 <Link href="https://mercor.com/" target="_blank" className="block">
@@ -527,6 +527,24 @@ export default function Home() {
                     <p className="text-gray-600 text-xs text-center">Voice AI platform for developers</p>
                 </div>
               </Link>
+              </div>
+
+              {/* Morph - Bronze Tier */}
+              <div className="max-w-xs w-full mx-auto">
+                <Link href="https://morphllm.com/" target="_blank" className="block">
+                  <div className="bg-gradient-to-br from-orange-50 to-white p-5 rounded-2xl border border-orange-200 hover:shadow-lg transition-shadow">
+                    <div className="h-16 mb-3 relative">
+                      <Image
+                        src="/sponsors/Morph.svg"
+                        alt="Morph"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
+                    <h4 className="text-sm font-bold mb-1 text-center">Morph</h4>
+                    <p className="text-gray-600 text-xs text-center">Lightning-fast AI code editing platform</p>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
